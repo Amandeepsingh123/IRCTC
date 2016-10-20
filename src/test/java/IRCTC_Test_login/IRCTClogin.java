@@ -52,9 +52,10 @@ public class IRCTClogin
 	
 //	List<WebElement> alllist = driver.findElements(By.xpath("//div[@class='onewayflightinfo']"));
 //	Assert.assertTrue(alllist.size()>0 && alllist.size()<100);
-//	System.out.println("Number of count "+alllist.size());
+//	System.out.println("Number of counts "+alllist.size());
 //	
 	Thread.sleep(5000);
 	driver.close();
+
 	}
 }
