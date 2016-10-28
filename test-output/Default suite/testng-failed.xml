@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="IRCTC_Test_login.IRCTClogin">
+      <class name="com.irctc.project.IrctcTest">
         <methods>
           <include name="IrctcTest"/>
         </methods>
-      </class> <!-- IRCTC_Test_login.IRCTClogin -->
+      </class> <!-- com.irctc.project.IrctcTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,34 +1,26 @@
-package IRCTC_Test_Page;
+package com.irctcpage.project;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.Set;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.Test;
 
-public class IRCTCPage{
+public class IrctcPage{
 	WebDriver driver;
 	private By Flight = By.xpath("//*[@id='bluemenu']/ul/li[5]/a");
-	//private By Oneway = By.xpath("//input[@name='tripType' and @value='One way']");
-	//private By RoundTrip = By.xpath("//div[@class='roundtripradio']/input[@name='tripType']");
 	private By Value1 = By.xpath("//input[@id='origin']");
-	private By Value1Click = By.xpath("//a[contains(text(),'Delhi (New Delhi),DEL')]");
+	//private By Value1Click = By.xpath("//a[contains(text(),'Delhi (New Delhi),DEL')]");
 	private By Value2 = By.xpath("//input[@id='destination']");
-	private By Value2Click = By.xpath("//a[contains(text(),'Goa,GOI')]");
+	//private By Value2Click = By.xpath("//a[contains(text(),'Goa,GOI')]");
 	private By CalButton = By.xpath("//input[@id='departDate']/following-sibling::img");
 	private By CalDate = By.xpath("//a[contains(text(),'20')]");
 	private By AdultClick = By.xpath("//select[@id='noOfAdult']/option[@value='2']");
 	private By ChildClick = By.xpath("//select[@id='noOfChild']/option[@value='1']");
 	private By Search = By.xpath("//div[@onclick='submitSearch();']");
 
-    public IRCTCPage(WebDriver driver)
+    public IrctcPage(WebDriver driver)
 	{
     	this.driver = driver;
 	}
@@ -36,22 +28,21 @@ public class IRCTCPage{
 	{
 	 driver.findElement(Flight).click();	
 	}
-	public void Enter_Source()
+	public void Enter_Source( String source) throws InterruptedException
 	{
-		driver.findElement(Value1).sendKeys("Delhi");
+		driver.findElement(Value1).sendKeys(source);
+		Thread.sleep(2000);
+		driver.findElement(Value1).sendKeys(Keys.TAB);
 	}
-	public void Click_Source()
-	{
-		driver.findElement(Value1Click).click();
-	}
-    public void Enter_Destination()
+	
+    public void Enter_Destination(String Desti) throws InterruptedException
     {
-    	driver.findElement(Value2).sendKeys("Goa");
+    	driver.findElement(Value2).sendKeys(Desti);
+    	Thread.sleep(2000);
+    	driver.findElement(Value2).sendKeys(Keys.TAB);
+    	
     }
-    public void Click_Destination()
-    {
-    	driver.findElement(Value2Click).click();
-    }
+   
     public void Click_Calendar()
     {
     	driver.findElement(CalButton).click();

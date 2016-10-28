@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\User\AppData\Local\Temp\testng-eclipse--853930321\testng-customsuite.xml</span>
+                    <span>C:\Users\User\AppData\Local\Temp\testng-eclipse--1252441697\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,7 +101,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="IRCTC_Test_login.IRCTClogin" hash-for-method="IrctcTest">IrctcTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.irctc.project.IrctcTest" hash-for-method="irctcTest(Jaipur, Delhi)">irctcTest(Jaipur, Delhi)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.irctc.project.IrctcTest" hash-for-method="irctcTest(chennai, Mumbai)">irctcTest(chennai, Mumbai)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -119,14 +124,23 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">IRCTC_Test_login.IRCTClogin</span>
+              <span class="class-name">com.irctc.project.IrctcTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="IrctcTest">
-                  </a> <!-- IrctcTest -->
-                  <span class="method-name">IrctcTest</span>
+                  <a name="irctcTest(Jaipur, Delhi)">
+                  </a> <!-- irctcTest(Jaipur, Delhi) -->
+                  <span class="method-name">irctcTest</span>
+                  <span class="parameters">(Jaipur, Delhi)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="irctcTest(chennai, Mumbai)">
+                  </a> <!-- irctcTest(chennai, Mumbai) -->
+                  <span class="method-name">irctcTest</span>
+                  <span class="parameters">(chennai, Mumbai)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -134,7 +148,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\User\AppData\Local\Temp\testng-eclipse--853930321\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\User\AppData\Local\Temp\testng-eclipse--1252441697\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -143,11 +157,11 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;IRCTC_Test_login.IRCTClogin&quot;&gt;
+      &lt;class name=&quot;com.irctc.project.IrctcTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;IrctcTest&quot;/&gt;
+          &lt;include name=&quot;irctcTest&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- IRCTC_Test_login.IRCTClogin --&gt;
+      &lt;/class&gt; &lt;!-- com.irctc.project.IrctcTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -187,16 +201,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'IrctcTest')
-data.setCell(0, 2, 'IRCTC_Test_login.IRCTClogin')
-data.setCell(0, 3, 34448);
+data.setCell(0, 1, 'irctcTest')
+data.setCell(0, 2, 'com.irctc.project.IrctcTest')
+data.setCell(0, 3, 34087);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'irctcTest')
+data.setCell(1, 2, 'com.irctc.project.IrctcTest')
+data.setCell(1, 3, 31731);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 34 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -222,10 +240,14 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">IRCTC_Test_login.IRCTClogin</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.irctc.project.IrctcTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">IrctcTest</span>
+                <span class="method-name">irctcTest(Jaipur, Delhi)</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">irctcTest(chennai, Mumbai)</span>
+                <span class="method-start">34089 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
